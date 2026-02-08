@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FASTLAP Simulation Engineering - Driving simulation software for engineering, motorsports, and research.">
+    <meta name="keywords" content="FASTLAP, Simulation Engineering, Simulation, Driving simulation, DIL, Simulation software">
+    <meta name="author" content="FASTLAP">
+    <title>FASTLAP Simulation Engineering</title>
+    
+    <!-- FAVICON -->
+    <link rel="icon" href="favicon.ico">
+    
+    <style>
+        /* --- Reset & Base Styles --- */
+        :root {
+            --bg-fallback: #e0e0e0;
+            --text-color: #444; 
+            --accent-color: #07396E; /* Brand Blue */
+            --white: #fff;
+            --container-width: 870px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Clean Engineering Font Stack */
+            font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 15px; 
+            
+            /* Gradient Background */
+            background-color: var(--bg-fallback);
+            background-image: linear-gradient(to bottom, #e8e8e8, 0%, #f2f2f2 100%);
+            background-attachment: fixed;
+            
+            color: var(--text-color);
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #003d80;
+            text-decoration: underline;
+        }
+
+        /* --- Layout Blocks --- */
+        header, main, footer {
+            max-width: var(--container-width);
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: var(--white);
+            padding: 10px; 
+            height: 140px; 
+            background-image: url('title.png');
+            background-repeat: no-repeat;
+            background-origin: content-box; 
+            background-size: contain;
+            background-position: center;
+        }
+
+        /* --- Main Content --- */
+        main {
+            flex: 1;
+            background-color: var(--white);
+        }
+
+        .content-section {
+            background: var(--white);
+            padding: 30px 50px;
+        }
+
+        /* --- Typography --- */
+        /* H1 and H2 are visually identical as requested, differing only in margin logic */
+        h1 { 
+            font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 16px; 
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            text-align: justify;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        h2 { 
+            font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 16px; 
+            font-weight: 700;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 40px; /* Top margin separates sections */
+            margin-bottom: 15px;
+            border: none;
+            text-align: justify;
+        }
+
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        /* --- Video Embed --- */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 30px 0;
+            background: #000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* --- Images --- */
+        .image-wrapper {
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            border: none;
+            display: block;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: transparent;
+            color: #333;
+            text-align: center;
+            padding: 5px 40px;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #000;
+        }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            .content-section {
+                padding: 20px;
+            }
+            
+            header {
+                height: 100px;
+                padding: 5px;
+            }
+            
+            body {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Background image 'title.png' is set in CSS -->
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="content-section">
+            
+            <h1>Driving simulation software</h1>
+            <p>FASTLAP is a driving simulation software solution for engineering. It performs real-time driver-in-the-loop simulations, typically used in motorsports, vehicle dynamics development, and research.</p>
+            <p>We offer solutions for a broad range of applications. This page performs only a general products and services description. We recommend contacting us for more information.</p>
+
+            <!-- Video Section -->
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://player.vimeo.com/video/938119943?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                    frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                    title="FASTLAP Simulation Software">
+                </iframe>
+            </div>
+
+            <!-- Application Solutions -->
+            <h2>Application-specific solutions</h2>
+            <p>Highest driving simulation profiles usually require running custom vehicle physics models, multi-channel projection, motion systems, specific hardware (such as real steering wheels), integration with other software (such as telemetry monitors), and more.</p>
+            <p>FASTLAP integrates a plugin architecture to meet these and other requirements. The FASTLAP SDK allows users to develop simulation environment customizations and extensions through this plugin architecture. Simulation engineering and development of custom solutions are also offered as a service.</p>
+
+            <!-- Vehicle Model Integration -->
+            <h2>Vehicle model integration</h2>
+            <p>FASTLAP includes its own vehicle physics model and a collection of vehicles. These vehicles and the physics model can be easily tuned by parameter adjustment.</p>
+            <p>However, it is possible to replace the vehicle physics model with custom or third-party models through the FASTLAP SDK. There are specialized companies offering high quality vehicle physics models for FASTLAP.</p>
+
+            <!-- Track Development -->
+            <h2>Track development</h2>
+            <p>In addition to our library of tracks, track development is offered as a service. Modeling parameters, such as surface accuracy or graphic detail level, can be adjusted depending on needs. Tracks can be developed from different data sources.</p>
+
+            <!-- Traffic Simulation -->
+            <h2>Traffic simulation</h2>
+            <p>FASTLAP features traffic simulation in urban and road environments. The characteristics of the traffic are easily adjustable. The automatic driver model is also available for racing and model development purposes.</p>
+            
+            <div class="image-wrapper">
+                <img src="traffic.jpg" alt="Traffic Simulation" title="Traffic Simulation">
+            </div>
+
+            <!-- Contact Section -->
+            <!-- Using H2 here to maintain section logic, margin-top separates it nicely from image -->
+            <h2>Contact us</h2>
+            <p>FASTLAP SIMULATION ENGINEERING<br>info@fastlap.tech<br>Tel: +34 675366802<br>Valencia, Spain</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 FASTLAP SIMULATION ENGINEERING</p>
+        </div>
+    </footer>
+
+</body>
+</html>
