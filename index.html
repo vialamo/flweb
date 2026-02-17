@@ -64,14 +64,32 @@
 
         /* --- Header --- */
         header {
-            background-color: var(--white);
-            padding: 10px; 
-            height: 140px; 
-            background-image: url('title.png');
-            background-repeat: no-repeat;
-            background-origin: content-box; 
-            background-size: contain;
-            background-position: center;
+            /* The White Rim */
+            /* Instead of padding, we use a solid white border to create the 10px margin effect */
+            border: 10px solid var(--white);
+            background-color: var(--white); /* Fallback */
+
+            /* The Gradient Background */
+            /* Because the border is solid white, it covers the edges of this gradient */
+            background: radial-gradient(circle at 130px 50%, #005F9A 0%, #07396E 40%);
+            
+            /* Layout Dimensions */
+            height: 135px; 
+            width: 100%;
+            box-sizing: border-box; 
+            
+            /* Flexbox Alignment (Centers logo vertically) */
+            display: flex;
+            align-items: center;
+            
+            /* Internal Spacing */
+            padding-left: 30px; 
+        }
+
+        /* --- Logo Styling --- */
+        .header-logo {
+            height: 42%; 
+            width: auto;
         }
 
         /* --- Main Content --- */
@@ -190,7 +208,7 @@
 
     <!-- Header -->
     <header>
-        <!-- Background image 'title.png' is set in CSS -->
+        <img src="logo.svg" alt="Fastlap Simulation Engineering" class="header-logo">
     </header>
 
     <!-- Main Content -->
@@ -244,7 +262,7 @@
                 <img src="traffic.jpg" alt="Traffic Simulation" title="Traffic Simulation">
             </div>
             <!-- Contact Section -->
-            <!-- Using H2 here to maintain section logic, margin-top separates it nicely from image -->
+            <!-- Using H2 here to maintain section logic -->
             <h2>Contact us</h2>
             <p>FASTLAP SIMULATION ENGINEERING<br>info@fastlap.tech<br>Tel: +34 675366802<br>Valencia, Spain</p>
         </section>
