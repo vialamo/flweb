@@ -145,13 +145,14 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
-        .video-wrapper iframe {
+        .video-wrapper video {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             border: 0;
+            object-fit: cover; /* Ensures the video fills the 16:9 box nicely */
         }
 
         /* --- Images --- */
@@ -218,14 +219,8 @@
             <p>FASTLAP is a driving simulation software solution for engineering. It performs real-time driver-in-the-loop simulations, typically used in motorsports, vehicle dynamics development, and research.</p>
             <p>We offer solutions for a broad range of applications. This page performs only a general products and services description. We recommend contacting us for more information.</p>
 
-            <!-- Video Section -->
             <div class="video-wrapper">
-                <iframe 
-                    src="https://player.vimeo.com/video/938119943?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-                    title="FASTLAP Simulation Software">
-                </iframe>
+                <video src="fastlap_simulation_software.mp4" autoplay muted loop playsinline disablePictureInPicture aria-label="FASTLAP Simulation Software"></video>
             </div>
 
             <!-- Application Solutions -->
@@ -270,7 +265,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 FASTLAP SIMULATION ENGINEERING</p>
+            <p>&copy; 2013&ndash;2026 FASTLAP SIMULATION ENGINEERING</p>
         </div>
     </footer>
 
